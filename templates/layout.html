@@ -23,8 +23,8 @@
         </div>
           <ul class="nav navbar-nav">
             <li {% if active_page=="home"%} class="active" {%endif%}><a href=".">Home</a></li>
-            <li><a href="/Paragraph 1">Page 1</a></li> <!-- p1 will show up in the url -->
-            <li><a href="/Paragraph 2">Page 2</a></li>
+            <li {% if active_page=="page 1"%} class="active" {%endif%}> <!-- p1 will show up in the url -->
+            <li {% if active_page=="page 2"%} class="active" {%endif%}>
           </ul>
       </div>
     </nav>
