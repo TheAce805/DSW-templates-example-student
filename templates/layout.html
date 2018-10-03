@@ -22,7 +22,7 @@
           <a class="navbar-brand" href=".">My Website</a>
         </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href=".">Home</a></li>
+            <li {% if activepage=="home"%} class="active" {%endif%}><a href=".">Home</a></li>
             <li><a href="/Paragraph 1">Page 1</a></li> <!-- p1 will show up in the url -->
             <li><a href="/Paragraph 2">Page 2</a></li>
           </ul>
